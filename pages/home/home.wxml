@@ -1,0 +1,3 @@
+<view class="home-page-container">
+  <goods-list goodsList="{{ goodsList }}" bind:click="gotoGoodsDetail"/>
+</view>

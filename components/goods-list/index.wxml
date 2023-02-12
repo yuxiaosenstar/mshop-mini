@@ -1,0 +1,5 @@
+<view class="goods-list-wrap">
+  <block wx:for="{{ goodsList }}" wx:for-item="item" wx:key="index">
+    <goods-card data="{{ item }}" data-index="{{index}}" bind:click="onClickGoods"></goods-card>
+  </block>
+</view>

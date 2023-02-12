@@ -1,0 +1,27 @@
+<van-toast id="van-toast" />
+
+<view class="goods-detail-page">
+  <view class="goods-head">
+    <van-image custom-class="detail-img" src="{{ detail.imgUrl }}" />
+    <view class="goods-info">
+      <view class="goods-number">
+        <view class="goods-price">
+          <price wr-class="class-goods-price" symbol-class="class-goods-symbol" price="{{ detail.price }}" type="lighter" />
+          <view class="goods-price-up">起</view>
+          <price wr-class="class-goods-del" price="{{ detail.price }}" type="delthrough" />
+        </view>
+      </view>
+      <view class="goods-title">
+        <view class="goods-name">{{ detail.title }}</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<van-goods-action>
+  <van-goods-action-icon icon="chat-o" text="客服" bind:click="onClickIcon" />
+  <van-goods-action-icon icon="cart-o" text="购物车" bind:click="onClickIcon" />
+  <van-goods-action-button text="加入购物车" type="warning" bind:click="onClickButton" />
+  <van-goods-action-button text="立即购买" bind:click="onClickButton" />
+</van-goods-action>
